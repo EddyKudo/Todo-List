@@ -6,9 +6,9 @@ const Tasks = ({ tasks, deleteTask }) => {
 		tasks.map(todo => {
 			return (
 				<div className="list-group-item w-50 mx-auto " key={todo.id}>
-					<div id="taskContent">{todo.content}</div>
+					<div id="taskCont">{todo.content}</div>
 					<span
-						id="remove"
+						id="taskRem"
 						onClick={() => {
 							deleteTask(todo.id);
 						}}
