@@ -7,14 +7,14 @@ const Tasks = ({ tasks, deleteTask }) => {
 			return (
 				<div className="list-group-item w-50 mx-auto " key={todo.id}>
 					<div id="taskCont">{todo.content}</div>
-					<span
+					<button
 						id="taskRem"
 						onClick={() => {
 							deleteTask(todo.id);
 						}}
 						className="float-right">
-						X
-					</span>
+						remove
+					</button>
 				</div>
 			);
 		})
